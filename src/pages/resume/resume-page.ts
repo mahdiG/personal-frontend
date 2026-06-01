@@ -25,20 +25,22 @@ export class ResumePage extends SignalWatcher(LitElement) {
           <article class="resume-paper">
             <!-- Header -->
             <header class="resume-header">
-              <h1 class="resume-name">Elias Thorne</h1>
-              <h2 class="resume-title">Lead Interface Designer</h2>
+              <h1 class="resume-name">Mahdi Gerami</h1>
+              <h2 class="resume-title">
+                Chief Technology Officer | Senior Software Engineer
+              </h2>
               <div class="resume-contact">
                 <span class="contact-item">
                   <span class="contact-icon">mail</span>
-                  elias.thorne@quietpaper.io
+                  mahdi.gerami77@gmail.com
                 </span>
                 <span class="contact-item">
-                  <span class="contact-icon">language</span>
-                  eliasthorne.design
+                  <span class="contact-icon">phone</span>
+                  +98 910 079 0266
                 </span>
                 <span class="contact-item">
                   <span class="contact-icon">location_on</span>
-                  Portland, OR
+                  Qom, Iran
                 </span>
               </div>
             </header>
@@ -46,11 +48,16 @@ export class ResumePage extends SignalWatcher(LitElement) {
             <!-- Summary -->
             <section class="resume-section avoid-break">
               <p class="resume-summary">
-                Digital product designer with a decade of experience crafting
-                tools for clarity. Focused on stripping away extraneous chrome
-                to build systems that respect user cognition. Specializes in
-                typography-driven design systems, minimalist architecture, and
-                the seamless integration of AI affordances.
+                Accomplished Senior Software Engineer and CTO with over 9 years
+                of experience architecting scalable web products and robust
+                cloud infrastructures. Proven track record of spearheading
+                full-lifecycle development, from dynamic frontends (React, Vue,
+                Lit) to high-performance backends (Golang) and automated cloud
+                environments (Kubernetes, Docker). Strong advocate for clean,
+                human-readable code architectures and efficient engineering
+                workflows. Experienced in technical leadership, cross-functional
+                team mentoring, and providing strategic B2B technical
+                consulting.
               </p>
             </section>
 
@@ -61,25 +68,46 @@ export class ResumePage extends SignalWatcher(LitElement) {
                 <!-- Job 1 -->
                 <div class="experience-entry avoid-break">
                   <div class="experience-header">
-                    <h4 class="experience-role">Principal Product Designer</h4>
-                    <span class="experience-date">2021 — Present</span>
+                    <h4 class="experience-role">
+                      Co-founder, CTO & Cloud Engineer
+                    </h4>
+                    <span class="experience-date">Apr 2022 — Apr 2026</span>
                   </div>
-                  <div class="experience-company">Acme AI Labs</div>
+                  <div class="experience-company">
+                    Lexoya Cloud Services (lexoya.com)
+                  </div>
                   <ul class="experience-bullets">
                     <li>
-                      Architected the core design system for an AI-native
-                      operating environment, reducing visual noise by 40% across
-                      key workflows.
+                      Co-founded and engineered a comprehensive cloud
+                      infrastructure platform (IaaS) offering services analogous
+                      to AWS/GCP, scaling the product to support over 1,500
+                      active users.
                     </li>
                     <li>
-                      Led a team of three designers to conceptualize and ship a
-                      dynamic canvas interface that replaced standard paginated
-                      data tables.
+                      Architected and maintained high-availability Kubernetes
+                      clusters on bare-metal servers, utilizing Docker, Ansible,
+                      and Terraform for automated provisioning and deployment.
                     </li>
                     <li>
-                      Authored the internal "Ethos & Restraint" design
-                      manifesto, standardizing interactions and micro-animations
-                      globally.
+                      Developed robust, high-performance RESTful APIs utilizing
+                      Golang and the GoFiber framework to interface seamlessly
+                      with the Kubernetes API, S3 storage, and internal
+                      microservices.
+                    </li>
+                    <li>
+                      Built a highly responsive Single Page Application (SPA)
+                      cloud management dashboard from scratch using HTML, CSS,
+                      JavaScript, and Lit.
+                    </li>
+                    <li>
+                      Directed company-wide R&D initiatives, enforced rigorous
+                      code review standards, and mentored the engineering team,
+                      including directly training a DevOps intern.
+                    </li>
+                    <li>
+                      Provided strategic technical consulting to B2B startup
+                      clients, optimizing their product architectures and cloud
+                      integrations.
                     </li>
                   </ul>
                 </div>
@@ -87,47 +115,153 @@ export class ResumePage extends SignalWatcher(LitElement) {
                 <!-- Job 2 -->
                 <div class="experience-entry avoid-break">
                   <div class="experience-header">
-                    <h4 class="experience-role">Senior UI Designer</h4>
-                    <span class="experience-date">2017 — 2021</span>
+                    <h4 class="experience-role">Senior Full-Stack Developer</h4>
+                    <span class="experience-date">Mar 2021 — Mar 2022</span>
                   </div>
-                  <div class="experience-company">Current Systems</div>
+                  <div class="experience-company">Abrooo</div>
                   <ul class="experience-bullets">
                     <li>
-                      Redesigned the flagship enterprise dashboard, migrating
-                      from a high-density, high-border aesthetic to a flat,
-                      whitespace-driven layout.
+                      Engineered scalable backend services and APIs using
+                      Golang.
                     </li>
                     <li>
-                      Developed comprehensive React component libraries
-                      emphasizing typographic hierarchy over color coding for
-                      state management.
+                      Developed a dynamic SPA dashboard utilizing native Web
+                      Components for optimized frontend performance.
+                    </li>
+                    <li>
+                      Led, mentored, and successfully onboarded junior and
+                      mid-level frontend engineering personnel.
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- Job 3 -->
+                <div class="experience-entry avoid-break">
+                  <div class="experience-header">
+                    <h4 class="experience-role">Frontend Developer</h4>
+                    <span class="experience-date">Feb 2019 — May 2020</span>
+                  </div>
+                  <div class="experience-company">Basalam (basalam.com)</div>
+                  <ul class="experience-bullets">
+                    <li>
+                      Spearheaded the end-to-end development of the vendor
+                      management dashboard utilizing Vue.js, successfully
+                      scaling it from initial concept to a production
+                      environment serving thousands of active vendors.
+                    </li>
+                    <li>
+                      Implemented critical features and performance
+                      optimizations across various client-facing web properties.
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- Job 4 -->
+                <div class="experience-entry avoid-break">
+                  <div class="experience-header">
+                    <h4 class="experience-role">Senior Frontend Developer</h4>
+                    <span class="experience-date">Jan 2018 — Jan 2019</span>
+                  </div>
+                  <div class="experience-company">Karans</div>
+                  <ul class="experience-bullets">
+                    <li>
+                      Designed and developed a comprehensive administrative
+                      management dashboard using React, streamlining internal
+                      operations.
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- Job 5 -->
+                <div class="experience-entry avoid-break">
+                  <div class="experience-header">
+                    <h4 class="experience-role">Frontend Developer</h4>
+                    <span class="experience-date">Feb 2017 — Dec 2017</span>
+                  </div>
+                  <div class="experience-company">Narvan</div>
+                  <ul class="experience-bullets">
+                    <li>
+                      Built a highly responsive SPA website utilizing React and
+                      Redux for state management.
+                    </li>
+                    <li>
+                      Contributed to cross-platform mobile application
+                      development using React Native.
                     </li>
                   </ul>
                 </div>
               </div>
             </section>
 
-            <!-- Skills & Education Grid -->
+            <!-- Current Projects -->
+            <section class="resume-section avoid-break">
+              <h3 class="section-title">Current Projects</h3>
+              <div class="experience-entry">
+                <div class="experience-header">
+                  <h4 class="experience-role">AI Life OS</h4>
+                </div>
+                <p class="skills-text">
+                  Developing an AI-integrated personal productivity and
+                  habit-tracking operating system. Architecting the backend with
+                  Golang (GoFiber), PostgreSQL, and Eino, paired with a modern
+                  frontend built in TypeScript and Lit.
+                </p>
+              </div>
+            </section>
+
+            <!-- Skills, Education & Languages Grid -->
             <div class="resume-grid avoid-break">
               <!-- Skills -->
               <section class="resume-section">
                 <h3 class="section-title">Capabilities</h3>
                 <p class="skills-text">
-                  Design Systems, Interface Architecture, Typographic Layout,
-                  Interaction Design, CSS/Tailwind, Prototyping, Accessibility
-                  Standards, Minimalist Ideation.
+                  Cloud Engineering, Senior Golang Development, Senior Web
+                  Development, DevOps, Linux, AI Integration, Prompt
+                  Engineering, Docker, Kubernetes, Ansible, Terraform, Git,
+                  CI/CD, React, Python, Node.js, TypeScript, Vue.js, Godot,
+                  Blender.
                 </p>
               </section>
 
-              <!-- Education -->
+              <!-- Education & Languages -->
               <section class="resume-section">
-                <h3 class="section-title">Education</h3>
+                <h3 class="section-title">Education & Languages</h3>
                 <div class="education-entry">
-                  <h4 class="education-degree">BFA Graphic Design</h4>
-                  <div class="education-school">
-                    Rhode Island School of Design
-                  </div>
-                  <div class="education-date">2010 — 2014</div>
+                  <h4 class="education-degree">English Literature</h4>
+                  <div class="education-school">University of Qom</div>
+                  <div class="education-date">2017</div>
+                  <p
+                    class="skills-text"
+                    style="font-size: var(--text-sm); margin-top: 4px; color: var(--color-text-secondary);"
+                  >
+                    Completed one semester before transitioning to pursue
+                    full-time professional software engineering.
+                  </p>
+                </div>
+                <div
+                  class="education-entry"
+                  style="margin-top: var(--space-xs);"
+                >
+                  <h4 class="education-degree">
+                    High School Diploma (Mathematics & Physics)
+                  </h4>
+                  <div class="education-school">Khajeh Nasir High School</div>
+                  <div class="education-date">2014 — 2017</div>
+                </div>
+                <div
+                  class="education-entry"
+                  style="margin-top: var(--space-md);"
+                >
+                  <h4
+                    class="education-degree"
+                    style="font-size: var(--text-sm); color: var(--color-primary);"
+                  >
+                    Languages
+                  </h4>
+                  <p class="skills-text" style="margin-top: 2px;">
+                    <strong>Persian:</strong> Native <br />
+                    <strong>English:</strong> Professional Working Proficiency
+                  </p>
                 </div>
               </section>
             </div>
