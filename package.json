@@ -1,0 +1,44 @@
+{
+  "name": "jarvis-frontend",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -n vite,tsc -c cyan,magenta \"vite \" \"tsc -p tsconfig.json --noEmit --watch\"",
+    "dev:vite": "vite",
+    "dev:typecheck": "tsc -p tsconfig.json --noEmit --watch",
+    "build": "vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "lint": "eslint \"src/**/*.ts\"",
+    "lint:fix": "eslint \"src/**/*.ts\" --fix",
+    "format": "prettier --check \"*.{ts,js,json,md,html}\" \"src/**/*.ts\"",
+    "format:fix": "prettier --write \"*.{ts,js,json,md,html}\" \"src/**/*.ts\"",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:web": "web-test-runner \"src/**/*.test.ts\" --node-resolve",
+    "test:web:watch": "web-test-runner \"src/**/*.test.ts\" --node-resolve --watch"
+  },
+  "dependencies": {
+    "@lit-labs/router": "0.1.4",
+    "@lit-labs/signals": "0.2.0",
+    "@lit/localize": "0.12.2",
+    "lit": "3.3.2"
+  },
+  "devDependencies": {
+    "concurrently": "9.2.1",
+    "eslint": "10.3.0",
+    "typescript": "6.0.3",
+    "vite": "8.0.10",
+    "@eslint/js": "10.0.1",
+    "typescript-eslint": "8.59.2",
+    "eslint-plugin-lit": "2.2.1",
+    "prettier": "3.8.3",
+    "vitest": "4.1.5",
+    "happy-dom": "17.4.6",
+    "@web/test-runner": "0.20.2",
+    "@web/test-runner-playwright": "0.11.1",
+    "@open-wc/testing": "4.0.0",
+    "@lit-labs/testing": "0.2.8"
+  }
+}
