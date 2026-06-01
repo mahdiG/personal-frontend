@@ -43,6 +43,26 @@ export class ResumePage extends SignalWatcher(LitElement) {
                   Qom, Iran
                 </span>
               </div>
+              <div class="resume-contact" style="margin-top: var(--space-xs);">
+                <a
+                  class="contact-item link-item"
+                  href="https://linkedin.com/in/your-profile"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <span class="contact-icon">link</span>
+                  linkedin.com/in/mahdi-gerami
+                </a>
+                <a
+                  class="contact-item link-item"
+                  href="https://github.com/your-username"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <span class="contact-icon">code</span>
+                  github.com/mahdiG
+                </a>
+              </div>
             </header>
 
             <!-- Summary -->
@@ -79,14 +99,16 @@ export class ResumePage extends SignalWatcher(LitElement) {
                   <ul class="experience-bullets">
                     <li>
                       Co-founded and engineered a comprehensive cloud
-                      infrastructure platform (IaaS) offering services analogous
-                      to AWS/GCP, scaling the product to support over 1,500
-                      active users.
+                      infrastructure platform (IaaS) analogous to AWS/GCP,
+                      successfully scaling the platform to power cloud
+                      infrastructure for over 1,500 B2B applications and
+                      developers.
                     </li>
                     <li>
                       Architected and maintained high-availability Kubernetes
                       clusters on bare-metal servers, utilizing Docker, Ansible,
-                      and Terraform for automated provisioning and deployment.
+                      and Terraform for automated provisioning and
+                      orchestration.
                     </li>
                     <li>
                       Developed robust, high-performance RESTful APIs utilizing
@@ -121,12 +143,13 @@ export class ResumePage extends SignalWatcher(LitElement) {
                   <div class="experience-company">Abrooo</div>
                   <ul class="experience-bullets">
                     <li>
-                      Engineered scalable backend services and APIs using
-                      Golang.
+                      Engineered scalable, concurrent backend services and APIs
+                      using Golang.
                     </li>
                     <li>
                       Developed a dynamic SPA dashboard utilizing native Web
-                      Components for optimized frontend performance.
+                      Components for optimized frontend rendering and
+                      performance.
                     </li>
                     <li>
                       Led, mentored, and successfully onboarded junior and
@@ -209,11 +232,11 @@ export class ResumePage extends SignalWatcher(LitElement) {
               </div>
             </section>
 
-            <!-- Skills, Education & Languages Grid -->
+            <!-- Technical Skills, Education & Languages Grid -->
             <div class="resume-grid avoid-break">
               <!-- Skills -->
               <section class="resume-section">
-                <h3 class="section-title">Capabilities</h3>
+                <h3 class="section-title">Technical Skills</h3>
                 <p class="skills-text">
                   Cloud Engineering, Senior Golang Development, Senior Web
                   Development, DevOps, Linux, AI Integration, Prompt
@@ -390,6 +413,16 @@ export class ResumePage extends SignalWatcher(LitElement) {
         display: flex;
         align-items: center;
         gap: var(--space-xs);
+      }
+
+      .link-item {
+        color: var(--color-text-secondary);
+        text-decoration: none;
+        transition: color var(--transition-fast);
+      }
+
+      .link-item:hover {
+        color: var(--color-primary);
       }
 
       .contact-icon {
