@@ -56,7 +56,13 @@ export const stitchLayout = css`
     width: 100%;
     max-width: 36rem;
     margin: 0 auto;
-    padding: var(--space-lg) var(--space-md) var(--space-xl);
+    padding: var(--space-md) var(--space-sm) var(--space-lg);
     box-sizing: border-box;
+  }
+
+  @media (min-width: 768px) {
+    .page-content {
+      padding: var(--space-lg) var(--space-md) var(--space-xl);
+    }
   }
 `;

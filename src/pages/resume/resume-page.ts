@@ -86,7 +86,7 @@ export class ResumePage extends SignalWatcher(LitElement) {
               <h3 class="section-title">Experience</h3>
               <div class="experience-list">
                 <!-- Job 1 -->
-                <div class="experience-entry avoid-break">
+                <div class="experience-entry">
                   <div class="experience-header">
                     <h4 class="experience-role">
                       Co-founder, CTO & Cloud Engineer
@@ -135,7 +135,7 @@ export class ResumePage extends SignalWatcher(LitElement) {
                 </div>
 
                 <!-- Job 2 -->
-                <div class="experience-entry avoid-break">
+                <div class="experience-entry">
                   <div class="experience-header">
                     <h4 class="experience-role">Senior Full-Stack Developer</h4>
                     <span class="experience-date">Mar 2021 — Mar 2022</span>
@@ -159,7 +159,7 @@ export class ResumePage extends SignalWatcher(LitElement) {
                 </div>
 
                 <!-- Job 3 -->
-                <div class="experience-entry avoid-break">
+                <div class="experience-entry">
                   <div class="experience-header">
                     <h4 class="experience-role">Frontend Developer</h4>
                     <span class="experience-date">Feb 2019 — May 2020</span>
@@ -180,7 +180,7 @@ export class ResumePage extends SignalWatcher(LitElement) {
                 </div>
 
                 <!-- Job 4 -->
-                <div class="experience-entry avoid-break">
+                <div class="experience-entry">
                   <div class="experience-header">
                     <h4 class="experience-role">Senior Frontend Developer</h4>
                     <span class="experience-date">Jan 2018 — Jan 2019</span>
@@ -196,7 +196,7 @@ export class ResumePage extends SignalWatcher(LitElement) {
                 </div>
 
                 <!-- Job 5 -->
-                <div class="experience-entry avoid-break">
+                <div class="experience-entry">
                   <div class="experience-header">
                     <h4 class="experience-role">Frontend Developer</h4>
                     <span class="experience-date">Feb 2017 — Dec 2017</span>
@@ -304,10 +304,10 @@ export class ResumePage extends SignalWatcher(LitElement) {
       .resume-container {
         flex: 1;
         overflow-y: auto;
-        padding: var(--space-sm);
         width: 100%;
         max-width: 36rem;
         margin: 0 auto;
+        box-sizing: border-box;
       }
 
       .resume-actions {
@@ -365,7 +365,7 @@ export class ResumePage extends SignalWatcher(LitElement) {
         margin: 0 auto;
         min-height: 297mm;
         background: var(--color-knockout, #ffffff);
-        padding: var(--space-lg);
+        padding: var(--space-md);
         display: flex;
         flex-direction: column;
         gap: var(--space-lg);
@@ -480,6 +480,9 @@ export class ResumePage extends SignalWatcher(LitElement) {
           justify-content: space-between;
           align-items: baseline;
         }
+        .resume-grid {
+          grid-template-columns: 1fr 1fr;
+        }
       }
 
       .experience-role {
@@ -535,9 +538,15 @@ export class ResumePage extends SignalWatcher(LitElement) {
         gap: var(--space-lg);
       }
 
-      @media (min-width: 640px) {
-        .resume-grid {
-          grid-template-columns: 1fr 1fr;
+      @media (min-width: 768px) {
+        .page-content {
+          max-width: 56rem;
+        }
+        .resume-container {
+          max-width: 56rem;
+        }
+        .resume-paper {
+          padding: var(--space-lg);
         }
       }
 
