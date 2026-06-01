@@ -1,4 +1,4 @@
-import { LitElement, css, html, nothing } from "lit";
+import { LitElement, css, html } from "lit";
 import { customElement, property } from "lit/decorators.js";
 
 @customElement("app-top-bar")
@@ -32,24 +32,13 @@ export class AppTopBar extends LitElement {
       <header class="top-bar">
         <div class="top-bar-inner">
           <div class="top-bar-left">
-            ${this.showBack
-              ? html`
-                  <button
-                    class="top-bar-button"
-                    @click=${this.handleBackClick}
-                    aria-label="Back"
-                  >
-                    arrow_back
-                  </button>
-                `
-              : nothing}
-            <span class="top-bar-title">${this.pageTitle || "Artifex"}</span>
+            <a class="top-bar-title" href="/">Mahdi's website</a>
           </div>
           <div class="top-bar-right">
             <div class="top-bar-nav">
               <a class="top-bar-nav-link" href="/">Home</a>
-              <a class="top-bar-nav-link" href="/portfolio">Portfolio</a>
-              <a class="top-bar-nav-link" href="/journal">Journal</a>
+              <!-- <a class="top-bar-nav-link" href="/portfolio">Portfolio</a> -->
+              <!-- <a class="top-bar-nav-link" href="/journal">Journal</a> -->
               <a class="top-bar-nav-link" href="/resume">Resume</a>
             </div>
             <button
@@ -82,6 +71,7 @@ export class AppTopBar extends LitElement {
       max-width: 36rem;
       margin: 0 auto;
       padding: var(--space-sm) var(--space-md);
+      min-height: 3.75rem;
       box-sizing: border-box;
     }
     .top-bar-left {
@@ -94,12 +84,27 @@ export class AppTopBar extends LitElement {
       align-items: center;
       gap: var(--space-sm);
     }
+    .top-bar-back {
+      display: flex;
+    }
+    .top-bar-back-placeholder {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: var(--space-xs);
+      font-family: "MaterialIcons";
+      font-size: 1.25rem;
+      line-height: 1;
+      visibility: hidden;
+      pointer-events: none;
+    }
     .top-bar-title {
       font-family: var(--font-sans);
       font-size: var(--text-heading);
       font-weight: var(--font-weight-medium);
       color: var(--color-text-primary);
       letter-spacing: -0.02em;
+      text-decoration: unset;
     }
     .top-bar-button {
       display: flex;
@@ -122,6 +127,9 @@ export class AppTopBar extends LitElement {
       display: none;
     }
     @media (min-width: 40rem) {
+      .top-bar-back {
+        display: none;
+      }
       .top-bar-nav {
         display: flex;
         gap: var(--space-md);

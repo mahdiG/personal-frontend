@@ -53,22 +53,6 @@ export class AppMenu extends LitElement {
               <span class="drawer-link-icon">home</span>
               <span>Home</span>
             </a>
-            <a
-              class="drawer-link"
-              href="/portfolio"
-              @click=${this.handleNavClick}
-            >
-              <span class="drawer-link-icon">folder</span>
-              <span>Portfolio</span>
-            </a>
-            <a
-              class="drawer-link"
-              href="/journal"
-              @click=${this.handleNavClick}
-            >
-              <span class="drawer-link-icon">article</span>
-              <span>Journal</span>
-            </a>
             <a class="drawer-link" href="/resume" @click=${this.handleNavClick}>
               <span class="drawer-link-icon">description</span>
               <span>Resume</span>

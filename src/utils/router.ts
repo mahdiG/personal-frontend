@@ -4,8 +4,8 @@ import { Router } from "@lit-labs/router";
 
 import "../pages/resume/resume-page";
 import "../pages/home/home-page";
-import "../pages/portfolio/portfolio-page";
-import "../pages/journal/journal-page";
+//import "../pages/portfolio/portfolio-page";
+//import "../pages/journal/journal-page";
 
 export function createRouter(
   rootElement: ReactiveControllerHost & HTMLElement,
@@ -18,14 +18,6 @@ export function createRouter(
     {
       path: "/",
       render: () => html`<home-page></home-page>`,
-    },
-    {
-      path: "/portfolio",
-      render: () => html`<portfolio-page></portfolio-page>`,
-    },
-    {
-      path: "/journal",
-      render: () => html`<journal-page></journal-page>`,
     },
     {
       path: "/*",

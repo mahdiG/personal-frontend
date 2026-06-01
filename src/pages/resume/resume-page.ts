@@ -35,10 +35,6 @@ export class ResumePage extends SignalWatcher(LitElement) {
                   mahdi.gerami77@gmail.com
                 </span>
                 <span class="contact-item">
-                  <span class="contact-icon">phone</span>
-                  +98 910 079 0266
-                </span>
-                <span class="contact-item">
                   <span class="contact-icon">location_on</span>
                   Qom, Iran
                 </span>
@@ -303,6 +299,9 @@ export class ResumePage extends SignalWatcher(LitElement) {
     css`
       .resume-container {
         flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         overflow-y: auto;
         width: 100%;
         max-width: 36rem;
@@ -313,8 +312,12 @@ export class ResumePage extends SignalWatcher(LitElement) {
       .resume-actions {
         display: flex;
         justify-content: flex-end;
+        align-self: center;
+        width: 100%;
+        max-width: 210mm;
         padding: var(--space-xs) 0;
         margin-bottom: var(--space-sm);
+        box-sizing: border-box;
       }
 
       .print-button {
@@ -362,7 +365,7 @@ export class ResumePage extends SignalWatcher(LitElement) {
       .resume-paper {
         max-width: 210mm;
         width: 100%;
-        margin: 0 auto;
+        margin: 0;
         min-height: 297mm;
         background: var(--color-knockout, #ffffff);
         padding: var(--space-md);
@@ -474,17 +477,6 @@ export class ResumePage extends SignalWatcher(LitElement) {
         flex-direction: column;
       }
 
-      @media (min-width: 640px) {
-        .experience-header {
-          flex-direction: row;
-          justify-content: space-between;
-          align-items: baseline;
-        }
-        .resume-grid {
-          grid-template-columns: 1fr 1fr;
-        }
-      }
-
       .experience-role {
         font-size: var(--text-md);
         font-weight: var(--font-weight-medium);
@@ -538,18 +530,6 @@ export class ResumePage extends SignalWatcher(LitElement) {
         gap: var(--space-lg);
       }
 
-      @media (min-width: 768px) {
-        .page-content {
-          max-width: 56rem;
-        }
-        .resume-container {
-          max-width: 56rem;
-        }
-        .resume-paper {
-          padding: var(--space-lg);
-        }
-      }
-
       /* Skills */
       .skills-text {
         font-size: var(--text-body);
@@ -585,6 +565,30 @@ export class ResumePage extends SignalWatcher(LitElement) {
       .avoid-break {
         page-break-inside: avoid;
         break-inside: avoid;
+      }
+
+      /* Responsive queries */
+      @media (min-width: 640px) {
+        .experience-header {
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: baseline;
+        }
+        .resume-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+
+      @media (min-width: 768px) {
+        .page-content {
+          max-width: 56rem;
+        }
+        .resume-container {
+          max-width: 56rem;
+        }
+        .resume-paper {
+          padding: var(--space-lg);
+        }
       }
 
       /* Print styles */
