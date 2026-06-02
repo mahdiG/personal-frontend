@@ -9,15 +9,6 @@ export class AppTopBar extends LitElement {
   @property({ type: Boolean, attribute: "show-back" })
   showBack = false;
 
-  private handleBackClick = () => {
-    this.dispatchEvent(
-      new CustomEvent("back", {
-        bubbles: true,
-        composed: true,
-      }),
-    );
-  };
-
   private handleMenuClick = () => {
     this.dispatchEvent(
       new CustomEvent("toggle-menu", {
