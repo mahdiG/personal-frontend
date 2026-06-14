@@ -27,7 +27,7 @@ export class ResumePage extends SignalWatcher(LitElement) {
             <header class="resume-header">
               <h1 class="resume-name">Mahdi Gerami</h1>
               <h2 class="resume-title">
-                Chief Technology Officer | Senior Software Engineer
+                Senior Software Engineer | Technical Lead
               </h2>
               <div class="resume-contact">
                 <span class="contact-item">
@@ -42,7 +42,7 @@ export class ResumePage extends SignalWatcher(LitElement) {
               <div class="resume-contact" style="margin-top: var(--space-xs);">
                 <a
                   class="contact-item link-item"
-                  href="https://linkedin.com/in/your-profile"
+                  href="https://linkedin.com/in/mahdi-gerami"
                   target="_blank"
                   rel="noopener"
                 >
@@ -51,7 +51,7 @@ export class ResumePage extends SignalWatcher(LitElement) {
                 </a>
                 <a
                   class="contact-item link-item"
-                  href="https://github.com/your-username"
+                  href="https://github.com/mahdiG"
                   target="_blank"
                   rel="noopener"
                 >
@@ -64,16 +64,17 @@ export class ResumePage extends SignalWatcher(LitElement) {
             <!-- Summary -->
             <section class="resume-section avoid-break">
               <p class="resume-summary">
-                Accomplished Senior Software Engineer and CTO with over 9 years
-                of experience architecting scalable web products and robust
-                cloud infrastructures. Proven track record of spearheading
-                full-lifecycle development, from dynamic frontends (React, Vue,
-                Lit) to high-performance backends (Golang) and automated cloud
-                environments (Kubernetes, Docker). Strong advocate for clean,
-                human-readable code architectures and efficient engineering
-                workflows. Experienced in technical leadership, cross-functional
-                team mentoring, and providing strategic B2B technical
-                consulting.
+                Senior Software Engineer and Technical Lead with 9+ years of
+                experience architecting scalable backend systems, cloud
+                platforms, and modern AI pipelines. As the technical co-founder
+                of a cloud platform (IaaS/PaaS/GPUaaS), I directed the
+                engineering of complex infrastructure serving over 2,000
+                developers and companies. I specialize in Go, high-concurrency
+                architectures, and bridging the gap between core systems and the
+                application layer. Currently focused on integrating practical,
+                agentic AI capabilities—such as Model Context Protocol (MCP)
+                servers, coding agents, and low-latency local inference—into
+                production environments.
               </p>
             </section>
 
@@ -85,7 +86,7 @@ export class ResumePage extends SignalWatcher(LitElement) {
                 <div class="experience-entry">
                   <div class="experience-header">
                     <h4 class="experience-role">
-                      Co-founder, CTO & Cloud Engineer
+                      Co-founder & Chief Technology Officer
                     </h4>
                     <span class="experience-date">Apr 2022 — Apr 2026</span>
                   </div>
@@ -94,38 +95,31 @@ export class ResumePage extends SignalWatcher(LitElement) {
                   </div>
                   <ul class="experience-bullets">
                     <li>
-                      Co-founded and engineered a comprehensive cloud
-                      infrastructure platform (IaaS) analogous to AWS/GCP,
-                      successfully scaling the platform to power cloud
-                      infrastructure for over 1,500 B2B applications and
-                      developers.
+                      Engineered a comprehensive cloud platform offering IaaS,
+                      PaaS, GPUaaS, DBaaS, Object (S3), and Block Storage,
+                      scaling the platform to support over 2,000 registered
+                      developers and companies.
                     </li>
                     <li>
-                      Architected and maintained high-availability Kubernetes
-                      clusters on bare-metal servers, utilizing Docker, Ansible,
-                      and Terraform for automated provisioning and
-                      orchestration.
+                      Architected the core backend infrastructure using Go and
+                      GoFiber, building high-performance RESTful APIs to
+                      orchestrate complex services and interface with Kubernetes
+                      and internal microservices.
                     </li>
                     <li>
-                      Developed robust, high-performance RESTful APIs utilizing
-                      Golang and the GoFiber framework to interface seamlessly
-                      with the Kubernetes API, S3 storage, and internal
-                      microservices.
+                      Built a responsive, highly dynamic SPA cloud management
+                      dashboard from scratch utilizing native Web Components and
+                      Lit.
                     </li>
                     <li>
-                      Built a highly responsive Single Page Application (SPA)
-                      cloud management dashboard from scratch using HTML, CSS,
-                      JavaScript, and Lit.
+                      Directed engineering strategy, mentored a cross-functional
+                      team, and established rigorous code-review standards
+                      focused on modularity and functional design.
                     </li>
                     <li>
-                      Directed company-wide R&D initiatives, enforced rigorous
-                      code review standards, and mentored the engineering team,
-                      including directly training a DevOps intern.
-                    </li>
-                    <li>
-                      Provided strategic technical consulting to B2B startup
-                      clients, optimizing their product architectures and cloud
-                      integrations.
+                      Designed and maintained high-availability bare-metal
+                      Kubernetes clusters, automating infrastructure
+                      provisioning to support massive platform scale.
                     </li>
                   </ul>
                 </div>
@@ -165,12 +159,7 @@ export class ResumePage extends SignalWatcher(LitElement) {
                     <li>
                       Spearheaded the end-to-end development of the vendor
                       management dashboard utilizing Vue.js, successfully
-                      scaling it from initial concept to a production
-                      environment serving thousands of active vendors.
-                    </li>
-                    <li>
-                      Implemented critical features and performance
-                      optimizations across various client-facing web properties.
+                      scaling it to serve thousands of active vendors.
                     </li>
                   </ul>
                 </div>
@@ -201,11 +190,8 @@ export class ResumePage extends SignalWatcher(LitElement) {
                   <ul class="experience-bullets">
                     <li>
                       Built a highly responsive SPA website utilizing React and
-                      Redux for state management.
-                    </li>
-                    <li>
-                      Contributed to cross-platform mobile application
-                      development using React Native.
+                      Redux for state management, and contributed to mobile
+                      application development using React Native.
                     </li>
                   </ul>
                 </div>
@@ -217,13 +203,15 @@ export class ResumePage extends SignalWatcher(LitElement) {
               <h3 class="section-title">Current Projects</h3>
               <div class="experience-entry">
                 <div class="experience-header">
-                  <h4 class="experience-role">AI Life OS</h4>
+                  <h4 class="experience-role">AI Life OS (Jarvis)</h4>
                 </div>
                 <p class="skills-text">
-                  Developing an AI-integrated personal productivity and
-                  habit-tracking operating system. Architecting the backend with
-                  Golang (GoFiber), PostgreSQL, and Eino, paired with a modern
-                  frontend built in TypeScript and Lit.
+                  Developing a cross-platform personal AI assistant bridging
+                  Linux environments and custom Android launchers using
+                  Flutter/Dart. The core backend utilizes Go, PostgreSQL, and
+                  custom MCP servers to orchestrate complex coding agents.
+                  Engineered a local, offline conversational AI pipeline
+                  utilizing Python for CPU-bound audio-to-audio inference.
                 </p>
               </div>
             </section>
@@ -234,11 +222,21 @@ export class ResumePage extends SignalWatcher(LitElement) {
               <section class="resume-section">
                 <h3 class="section-title">Technical Skills</h3>
                 <p class="skills-text">
-                  Cloud Engineering, Senior Golang Development, Senior Web
-                  Development, DevOps, Linux, AI Integration, Prompt
-                  Engineering, Docker, Kubernetes, Ansible, Terraform, Git,
-                  CI/CD, React, Python, Node.js, TypeScript, Vue.js, Godot,
-                  Blender.
+                  <strong>AI & Agentic Systems:</strong> Coding Agents, Model
+                  Context Protocol (MCP), Local LLM Inference, CPU-bound Audio
+                  Processing
+                  <br />
+                  <br />
+                  <strong>Backend Engineering:</strong> Golang, PostgreSQL,
+                  Python, Node.js, RESTful API Architecture
+                  <br />
+                  <br />
+                  <strong>Systems & Infrastructure:</strong> System
+                  Architecture, Kubernetes, Docker, Linux, Ansible
+                  <br />
+                  <br />
+                  <strong>Frontend & Mobile:</strong> TypeScript, Lit, Vue.js,
+                  React, Web Components, Flutter, Dart
                 </p>
               </section>
 
@@ -254,7 +252,7 @@ export class ResumePage extends SignalWatcher(LitElement) {
                     style="font-size: var(--text-sm); margin-top: 4px; color: var(--color-text-secondary);"
                   >
                     Completed one semester before transitioning to pursue
-                    full-time professional software engineering.
+                    full-time software engineering.
                   </p>
                 </div>
                 <div
